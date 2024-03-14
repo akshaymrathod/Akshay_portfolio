@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <span>Shilpa Rathod</span>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+            <img src="images/moon.jpg" id="icon">
+        </nav>
+        <div class="info">
+            <h1>I'm Shilpa Rathod</h1>
+            <p>This is my official Protfolio Website to showcase my all work
+                related to web<br>delelopment and UI design.</p>
+            <a href="">Download cv</a>
+            <a href="">Get in Touch</a>
+        </div>
+        <div class="img-box">
+            <img src="images/shape.png" class="back-img">
+            <img src="images/Shilpa.jpg" class="main-img">
+        </div>
+        <div class="social link">
+            <img src="images/fab.png" id="icon">
+            <img src="images/insta.png" id="icon">
+            <img src="images/twitter.png" id="icon">
+            <img src="images/tel.png" id="icon">
+            <img src="images/in.png" id="icon"> 
+        </div>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.containes("dark-theme")){
+                icon.src="images/sun.jpg" 
+            }else{
+                icon.src="images/moon.png" 
+            }
+        }
+    </script>
+
+</body>
+
+</html>
